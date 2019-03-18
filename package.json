@@ -1,0 +1,11 @@
+{
+  "name": "LogicBot",
+  "version": "1.0.0",
+  "description": "Server Moderation",
+  "main": "bot.js",
+  "author": "*DFDYT*",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "winston": "^3.2.1"
+  }
+}
