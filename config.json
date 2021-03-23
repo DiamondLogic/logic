@@ -1,4 +1,4 @@
 { 
-  "token"  : "NTQwNjM0NzcyNzc5ODI3MjIw.DzTw5A.h1STve7IrA4jXmhSPjpSo5Ka8ng",
-  "prefix" : "="
+  "token"  : "", //Change this to be your bot token
+  "prefix" : "" //Change this to be your prefix
 }
