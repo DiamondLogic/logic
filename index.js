@@ -76,12 +76,6 @@ client.on("message", async message => {
     message.delete().catch(O_o=>{});
 		message.channel.send('\nHere are the commands for Staff:\n1) =Kick @usertag [Reason]\n2) =ban @usertag  [Reason]\n3) =say [Anything You Want]\n3) =Ping \n4) =purge [Ammount +1]')
   }
-  if(command === 'abdl'){
-    if(!message.member.roles.some(r=>["ABDL"].includes(r.name)) ) 
-      return message.reply("Sorry, you don't have **ABDL** permissions to use this!");
-    message.delete()
-    message.channel.send('_***Here are the commands for ABDL:***_     \n1) =diaper \n2) =pacifier \n3) =pee \n4) =poop \n5) =bottle \n6) =abdl (This opens up this menu)');
-  }
   if(command == 'sub') {
     message.delete().catch(O_o=>{});
     message.author.send('Subscribe to these links: \nDiamondForDaysYT: \nhttps://www.youtube.com/DiamondForDaysYT \nThe Flamer: \nhttps://www.youtube.com/channel/UCJPHfAdJjZML0xQ7cYnVtfQ \nTheRealMck: \nhttps://www.twitch.tv/thetruemck/ \nThanks And Enjoy The Content.')
@@ -112,38 +106,6 @@ client.on("message", async message => {
    message.delete().catch(O_o=>{})
    message.channel.send('HELLO THERE!: \nhttps://tenor.com/view/hello-there-gif-9442662')
  }
-  
-  if(command === 'diaper'){
-    if(!message.member.roles.some(r=>["ABDL"].includes(r.name)) ) 
-      return message.reply("Sorry, you don't have **ABDL** permissions to use this!");
-    message.delete()
-    message.author.send(' Heres a few gifs: \nDancing Diaper Babys: https://tenor.com/view/romper-big-baby-diaper-dancing-babies-digital-short-gif-10207604')
-  }
-  if(command === 'pacifier'){
-    if(!message.member.roles.some(r=>["ABDL"].includes(r.name)) ) 
-      return message.reply("Sorry, you don't have **ABDL** permissions to use this!");
-    message.delete()
-    let userId = message.author.id;
-    message.channel.send('Quick Someone Fetch ' +message.author + ' Pacifier');
-  }
-  if(command === 'pee'){
-    if(!message.member.roles.some(r=>["ABDL"].includes(r.name)) ) 
-      return message.reply("Sorry, you don't have **ABDL** permissions to use this!");
-    message.delete()
-    message.channel.send("Someone Quick Change" +message.author+ "'s Diaper it is soaking wet")
-  }
-  if(command === 'poop'){
-    if(!message.member.roles.some(r=>["ABDL"].includes(r.name)) ) 
-      return message.reply("Sorry, you don't have **ABDL** permissions to use this!");
-    message.delete()
-    message.channel.send("Someone Quick Change" +message.author+ "'s Diaper it is ***Soaking Wet*** and ***Messy***")
-  }
-  if(command === 'bottle'){
-    if(!message.member.roles.some(r=>["ABDL"].includes(r.name)) ) 
-      return message.reply("Sorry, you don't have **ABDL** permissions to use this!");
-    message.delete()
-    message.channel.send("Someone Quick Fetch" +message.author+ " ***Bottle*** because he/she is thirsty. \nhttps://tenor.com/view/the-boss-baby-bottle-slap-slap-hand-gif-6184649")
-  }
   if(command === "ping") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
